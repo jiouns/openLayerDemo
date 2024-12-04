@@ -102,6 +102,7 @@ const App = () => {
   // map.addLayer(anchorLayer);
   // ------- end  ---------- 
 
+  // 点击地图 绘制一个图标
   map.on('click', (e:any) => {
     const feature = new Feature({
       geometry: new Point(e.coordinate),
